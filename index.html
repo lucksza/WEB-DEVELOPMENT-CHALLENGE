@@ -3,55 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apostas Fórmula E</title>
+    <title>Apostas Fórmula E - Sinta a Emoção</title>
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
     <header>
-        <h1>Apostas Fórmula E</h1>
+        <h1>Fórmula E - Apostas e Emoção</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="#home">Início</a></li>
                 <li><a href="#bets">Apostar</a></li>
+                <li><a href="#schedule">Corridas</a></li>
                 <li><a href="#results">Resultados</a></li>
+                <li><a href="#about">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Bem-vindo às Apostas da Fórmula E</h2>
-        <p>Participe da emoção das corridas apostando em seus pilotos favoritos!</p>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Explore o Mundo da Fórmula E</h2>
+            <p>Descubra a emoção das corridas elétricas e envolva-se com o dinamismo do automobilismo moderno.</p>
+        </section>
 
-    <section id="bets">
-        <h2>Faça Sua Aposta</h2>
-        <form id="betForm">
-            <label for="race">Escolha a corrida:</label>
-            <select id="race" name="race">
-                <option value="newYork">New York E-Prix</option>
-                <option value="berlin">Berlin E-Prix</option>
-                <option value="monaco">Monaco E-Prix</option>
-            </select>
+        <section id="bets">
+            <h2>Faça Suas Apostas</h2>
+            <form id="betForm">
+                <label for="race">Escolha a corrida:</label>
+                <select id="race" name="race">
+                    <option value="newYork">New York E-Prix</option>
+                    <option value="berlin">Berlin E-Prix</option>
+                    <option value="monaco">Monaco E-Prix</option>
+                </select>
 
-            <label for="driver">Escolha o piloto:</label>
-            <select id="driver" name="driver">
-                <option value="driver1">Piloto 1</option>
-                <option value="driver2">Piloto 2</option>
-                <option value="driver3">Piloto 3</option>
-            </select>
+                <label for="driver">Escolha o piloto:</label>
+                <select id="driver" name="driver">
+                    <option value="driver1">Piloto 1</option>
+                    <option value="driver2">Piloto 2</option>
+                    <option value="driver3">Piloto 3</option>
+                </select>
 
-            <label for="amount">Valor da Aposta:</label>
-            <input type="number" id="amount" name="amount" min="10" step="5">
+                <label for="amount">Valor da Aposta (R$):</label>
+                <input type="number" id="amount" name="amount" min="10" step="5" required>
 
-            <button type="submit">Apostar</button>
-        </form>
-    </section>
+                <button type="submit">Apostar</button>
+            </form>
+        </section>
 
-    <section id="results">
-        <h2>Resultados das Corridas</h2>
-        <p>Veja os resultados das últimas corridas e confira se você ganhou!</p>
-        <div id="raceResults"></div>
-    </section>
+        <section id="schedule">
+            <h2>Agenda de Corridas</h2>
+            <ul>
+                <li>New York E-Prix - 15 de Junho</li>
+                <li>Berlin E-Prix - 22 de Junho</li>
+                <li>Monaco E-Prix - 29 de Junho</li>
+            </ul>
+        </section>
+
+        <section id="results">
+            <h2>Resultados Recentes</h2>
+            <div id="raceResults"></div>
+        </section>
+
+        <section id="about">
+            <h2>Saiba Mais Sobre Nós</h2>
+            <p>Entenda nossa paixão pela Fórmula E e como buscamos trazer a melhor experiência de aposta para você.</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Apostas Fórmula E. Todos os direitos reservados.</p>
