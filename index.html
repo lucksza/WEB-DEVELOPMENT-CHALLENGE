@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    
     <header>
         <h1>Fórmula E - Apostas e Emoção</h1>
         <nav>
@@ -17,6 +34,7 @@
                 <li><a href="#schedule">Corridas</a></li>
                 <li><a href="#results">Resultados</a></li>
                 <li><a href="#about">Sobre</a></li>
+                <li><button id="loginButton">Login</button></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +43,14 @@
         <section id="home">
             <h2>Explore o Mundo da Fórmula E</h2>
             <p>Descubra a emoção das corridas elétricas e envolva-se com o dinamismo do automobilismo moderno.</p>
+            <div id="slideshow">
+                <img src="/imagens/slide1.png" alt="Corrida 1">
+                <img src="/imagens/slide2.png" alt="Corrida 2" style="display:none;">
+                <img src="/imagens/slide3.png" alt="Corrida 3" style="display:none;">
+            </div>
         </section>
+
+
 
         <section id="bets">
             <h2>Faça Suas Apostas</h2>
@@ -67,7 +92,7 @@
 
         <section id="about">
             <h2>Saiba Mais Sobre Nós</h2>
-            <p>Entenda nossa paixão pela Fórmula E e como buscamos trazer a melhor experiência de aposta para você.</p>
+            <p>Apostas Fórmula E é a sua plataforma de confiança para apostas em corridas elétricas, combinando segurança, paixão pelo esporte e inovação para oferecer uma experiência de aposta emocionante e justa. Nos dedicamos a criar uma comunidade onde os entusiastas do automobilismo podem compartilhar sua paixão e engajamento com corridas sustentáveis, garantindo integridade e responsabilidade em cada aposta.</p>
         </section>
     </main>
 
