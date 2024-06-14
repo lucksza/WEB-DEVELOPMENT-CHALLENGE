@@ -154,3 +154,21 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('active');
     });
 });
+const voteCounts = {
+    'driver1': 0,
+    'driver2': 0,
+    'driver3': 0
+};
+
+document.getElementById('voteForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const selectedDriver = document.getElementById('voteDriver').value;
+    voteCounts[selectedDriver]++;
+    alert(`Você votou no ${selectedDriver}! Obrigado por participar.`);
+    displayVoteCounts();
+});
+
+function displayVoteCounts() {
+    const resultsText = `Votos - Piloto 1: ${voteCounts['driver1']}, Piloto 2: ${voteCounts['driver2']}, Piloto 3: ${voteCounts['driver3']}`;
+    document.getElementById('voteResults').innerText = resultsText;
+}
