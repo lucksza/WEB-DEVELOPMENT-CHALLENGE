@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostas Fórmula E</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Apostas Fórmula E</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bets">Apostar</a></li>
+                <li><a href="#results">Resultados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo às Apostas da Fórmula E</h2>
+        <p>Participe da emoção das corridas apostando em seus pilotos favoritos!</p>
+    </section>
+
+    <section id="bets">
+        <h2>Faça Sua Aposta</h2>
+        <form id="betForm">
+            <label for="race">Escolha a corrida:</label>
+            <select id="race" name="race">
+                <option value="newYork">New York E-Prix</option>
+                <option value="berlin">Berlin E-Prix</option>
+                <option value="monaco">Monaco E-Prix</option>
+            </select>
+
+            <label for="driver">Escolha o piloto:</label>
+            <select id="driver" name="driver">
+                <option value="driver1">Piloto 1</option>
+                <option value="driver2">Piloto 2</option>
+                <option value="driver3">Piloto 3</option>
+            </select>
+
+            <label for="amount">Valor da Aposta:</label>
+            <input type="number" id="amount" name="amount" min="10" step="5">
+
+            <button type="submit">Apostar</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>Resultados das Corridas</h2>
+        <p>Veja os resultados das últimas corridas e confira se você ganhou!</p>
+        <div id="raceResults"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Apostas Fórmula E. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
